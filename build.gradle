@@ -21,3 +21,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+plugins {
+  id "org.sonarqube" version "4.0.0.2929"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "MB-master"
+    property "sonar.projectName", "MB-master"
+  }
+}
